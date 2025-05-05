@@ -207,7 +207,7 @@ body {
       font-style: italic;
       background-color: #e9f7ff; /* Light blue background */
       padding: 5px 8px; /* Add some padding */
-      border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+      border-radius: 0 4 errpx 4px 0; /* Rounded corners on the right */
       line-height: 1.4; /* Improve readability */
       /* Ensure notes are visible and don't disrupt layout severely */
       display: block;

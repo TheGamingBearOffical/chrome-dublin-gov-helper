@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
                  // Check for errors in sending/receiving message
                  if (chrome.runtime.lastError) {
                     console.error("Error sending message to content script:", chrome.runtime.lastError);
-                    noInfoStatus.textContent = "Could not get page info. Ensure extension is active and you are on a supported Dublin CA government site (dublin.ca.gov)."; // Updated message
+                    noInfoStatus.textContent = "Could not get page info. Ensure extension is active and you are on a supported Dublin CA government site (dublin.ca.gov or related portals)."; // Updated message
                     noInfoStatus.style.display = 'block';
                     pageInfoDiv.style.display = 'none'; // Hide info area
                     doPrefillBtn.disabled = true; // Disable pre-fill if communication fails
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
              // If could not query active tab
              loadingStatus.style.display = 'none';
-             noInfoStatus.textContent = "Could not get tab information. Is the extension enabled and on dublin.ca.gov?"; // Updated message
+             noInfoStatus.textContent = "Could not get tab information. Is the extension enabled and on a supported Dublin CA site?"; // Updated message
              noInfoStatus.style.display = 'block';
              pageInfoDiv.style.display = 'none';
              doPrefillBtn.disabled = true;
@@ -272,9 +272,9 @@ document.addEventListener('DOMContentLoaded', () => {
                  });
              } else {
                   // Could not query active tab
-                 statusMessageDiv.textContent = "Could not find active tab on dublin.ca.gov to pre-fill."; // Updated message
+                 statusMessageDiv.textContent = "Could not find active tab on a supported Dublin CA site to pre-fill."; // Updated message
                  statusMessageDiv.style.color = 'red';
-                 setTimeout(() => { statusMessageDiv.textContent = '', statusMessageDiv.style.color = ''; }, 5000);
+                 setTimeout(() => { statusMessageDiv.textContent = '', statusMessageMessageDiv.style.color = ''; }, 5000); // Fix typo here too
              }
         });
     });
