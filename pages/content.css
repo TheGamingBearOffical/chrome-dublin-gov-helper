@@ -1,0 +1,37 @@
+/* pages/content.css */
+
+/* Style for the injected notes below form fields */
+.dublin-helper-notes {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    border-left: 3px solid #007bff; /* Blue border */
+    padding-left: 8px; /* Increased padding */
+    font-style: italic;
+    background-color: #e9f7ff; /* Light blue background */
+    padding: 5px 8px; /* Add some padding */
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+    line-height: 1.4; /* Improve readability */
+    /* Ensure notes are visible and don't disrupt layout severely */
+    display: block;
+    width: auto; /* Or a specific max-width if needed */
+}
+
+/* Add other styles here if you implement on-page UI elements */
+/* For example, styles for a jargon tooltip */
+/*
+.dublin-helper-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    z-index: 10001; // Ensure it's on top of almost everything
+    pointer-events: none; // Don't interfere with clicks underneath
+    max-width: 250px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    white-space: normal; // Allow text to wrap
+}
+*/

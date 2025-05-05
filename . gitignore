@@ -1,0 +1,6 @@
+# Chrome Extension specific files
+# If you decide to add node_modules later for build tools
+node_modules/
+
+# Chrome may create these files
+.DS_Store

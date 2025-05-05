@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Dublin Gov Helper",
+    "version": "0.1.0",
+    "description": "Get contextual help and fill forms on Dublin, CA government websites.",
+    "permissions": [
+      "activeTab",       
+      "storage",         
+      "scripting"        
+    ],
+    "host_permissions": [
+
+      "*://dublin.ca.gov/*"
+      
+    ],
+    "action": {
+      "default_popup": "pages/popup.html",
+      "default_icon": {            
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.dublin.ca.gov/*", 
+          "*://dublin.ca.gov/*"
+          
+        ],
+        "js": ["scripts/content.js"], 
+        "css": ["pages/content.css"]  
+      }
+    ],
+    "background": { 
+      "service_worker": "scripts/background.js"
+    }
+  }

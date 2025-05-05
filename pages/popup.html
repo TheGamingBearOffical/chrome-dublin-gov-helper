@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dublin Gov Helper</title>
+  <link rel="stylesheet" href="popup.css"> <!-- Link to separate CSS -->
+</head>
+<body>
+  <div class="container">
+    <h3>Dublin Gov Helper (Dublin, CA)</h3> <!-- Updated Title -->
+
+    <div id="info-area">
+      <p id="loading-status">Loading info for this page...</p>
+      <div id="page-info" style="display:none;">
+        <p id="form-page-status"></p> <!-- Added status for form pages -->
+        <h4>Relevant Links & Info:</h4>
+        <ul id="relevant-links">
+          <!-- Links will be added here by popup.js -->
+        </ul>
+        <div id="jargon-definitions">
+            <!-- Jargon will be added here if needed -->
+        </div>
+      </div>
+       <p id="no-info" style="display:none;">No specific help available for this page yet.</p>
+    </div>
+
+    <div id="prefill-area">
+        <h4>Form Pre-fill:</h4>
+        <p>Select profile and click 'Pre-fill' on a recognized form page on dublin.ca.gov.</p> <!-- Updated text -->
+
+        <!-- Profile Selection -->
+        <div class="profile-selector">
+            <label for="profile-select">Profile:</label>
+            <select id="profile-select">
+                <!-- Options populated by popup.js -->
+            </select>
+            <!-- Optional: Button for a future profile management UI -->
+            <!-- <button id="manage-profiles-btn">Manage</button> -->
+        </div>
+
+
+        <form id="prefill-form">
+            <!-- Input fields show data for the *currently selected* profile -->
+            <!-- They are disabled unless 'Edit' is clicked -->
+            <input type="text" id="prefill-name" placeholder="Name" disabled>
+            <input type="text" id="prefill-address" placeholder="Street Address" disabled>
+            <input type="text" id="prefill-city" placeholder="City (e.g., Dublin)" disabled>
+            <input type="text" id="prefill-state" placeholder="State (e.g., CA)" disabled>
+            <input type="text" id="prefill-zip" placeholder="Zip Code" disabled>
+            <input type="email" id="prefill-email" placeholder="Email" disabled>
+            <input type="tel" id="prefill-phone" placeholder="Phone" disabled>
+            <!-- Buttons control editing and pre-filling -->
+            <button type="button" id="edit-profile-btn">Edit Selected Profile</button>
+            <button type="button" id="do-prefill-btn" disabled>Pre-fill Form</button> <!-- Disabled by default -->
+        </form>
+        <div id="status-message"></div>
+    </div>
+  </div>
+
+  <script src="../scripts/popup.js"></script> <!-- Updated path -->
+</body>
+</html>

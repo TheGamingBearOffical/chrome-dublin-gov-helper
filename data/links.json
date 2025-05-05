@@ -1,0 +1,16 @@
+{
+    "building": [
+      {"text": "Building Permit Application Form (Example)", "url": "https://www.cityofdublin.org/placeholder-building-permit-form"},
+      {"text": "Residential Building Guide (Example)", "url": "https://www.cityofdublin.org/placeholder-building-guide"},
+      {"text": "Planning & Zoning Main Page", "url": "https://www.cityofdublin.org/planning"}
+    ],
+    "business": [
+      {"text": "Business License Application (Example)", "url": "https://www.cityofdublin.org/placeholder-business-license-form"},
+      {"text": "Starting a Business in Dublin", "url": "https://www.cityofdublin.org/business"},
+      {"text": "Business Regulations Summary", "url": "https://www.cityofdublin.org/placeholder-biz-regulations"}
+    ],
+    "general": [
+      {"text": "City Forms & Applications Directory", "url": "https://www.cityofdublin.org/forms"},
+      {"text": "Dublin Municipal Code", "url": "https://library.municode.com/ca/dublin"}
+    ]
+  }

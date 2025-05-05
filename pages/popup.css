@@ -1,0 +1,215 @@
+/* pages/popup.css */
+
+body {
+    font-family: sans-serif;
+    width: 300px;
+    padding: 0; /* Remove body padding */
+    margin: 0; /* Remove body margin */
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+      padding: 15px; /* Add padding to a container */
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  h4 {
+      margin-top: 15px;
+      margin-bottom: 8px;
+      color: #555;
+      font-size: 1em;
+  }
+  
+  #info-area {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+  }
+  
+  #info-area ul {
+      list-style: disc; /* Use standard list style */
+      padding-left: 20px;
+      margin: 0;
+  }
+  
+  #info-area li {
+      margin-bottom: 5px;
+      font-size: 0.95em;
+      line-height: 1.4;
+  }
+  
+  #info-area li a {
+      text-decoration: none;
+      color: #0066cc;
+      word-break: break-word; /* Prevent long URLs breaking layout */
+  }
+  
+  #info-area li a:hover {
+      text-decoration: underline;
+  }
+  
+  
+  #jargon-definitions h5 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 0.95em;
+      color: #333;
+  }
+  
+  #jargon-definitions ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.9em;
+  }
+  
+  #jargon-definitions li {
+      margin-bottom: 8px;
+      padding: 5px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  }
+  
+  #jargon-definitions li strong {
+      color: #000;
+  }
+  
+  #form-page-status {
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #e9f7ff;
+      border: 1px solid #b8daff;
+      border-radius: 4px;
+      display: none; /* Initially hidden */
+      font-size: 0.9em;
+  }
+  
+  
+  #prefill-area {
+      margin-top: 10px;
+  }
+  
+  .profile-selector {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 5px; /* Space between elements */
+  }
+  
+  .profile-selector label {
+      font-size: 0.95em;
+      color: #333;
+      min-width: 50px; /* Give label a minimum width */
+  }
+  
+  .profile-selector select {
+      flex-grow: 1; /* Allow select to take available space */
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 0.9em;
+  }
+  
+  .profile-selector button {
+       padding: 5px 10px;
+       background-color: #f0f0f0;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       cursor: pointer;
+       font-size: 0.9em;
+  }
+  
+  .profile-selector button:hover {
+       background-color: #e0e0e0;
+  }
+  
+  
+  #prefill-form input {
+      width: calc(100% - 12px); /* Adjust for padding and border */
+      margin-bottom: 8px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #eee; /* Indicate disabled */
+      cursor: not-allowed;
+      font-size: 0.9em;
+  }
+  
+  #prefill-form input:enabled {
+      background-color: #fff; /* Indicate enabled */
+      cursor: text;
+  }
+  
+  
+  #prefill-form button {
+      width: auto; /* Buttons don't need full width */
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 5px;
+  }
+  
+  #prefill-form button#edit-profile-btn {
+      background-color: #ffc107; /* Yellow for edit */
+      color: #333;
+      margin-right: 5px;
+  }
+  #prefill-form button#edit-profile-btn:hover {
+      background-color: #e0a800;
+  }
+  
+  #prefill-form button#do-prefill-btn {
+      background-color: #007bff; /* Blue for action */
+      color: white;
+  }
+  #prefill-form button#do-prefill-btn:hover {
+      background-color: #0056b3;
+  }
+  #prefill-form button#do-prefill-btn:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+  }
+  
+  
+  #status-message {
+      margin-top: 10px;
+      padding: 5px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      min-height: 1em; /* Reserve space to prevent layout shift */
+  }
+  
+  /* Specific status colors */
+  #status-message[style*="green"] { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+  #status-message[style*="red"] { background-color: #f8d7da; color: #721c24; border: 1px solid #721c24; border: 1px solid #f5c6cb; }
+  #status-message[style*="orange"] { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+  
+  
+  /* Basic styles for notes injected by content script */
+  .dublin-helper-notes {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 3px;
+      margin-bottom: 8px;
+      border-left: 3px solid #007bff; /* Blue border */
+      padding-left: 8px; /* Increased padding */
+      font-style: italic;
+      background-color: #e9f7ff; /* Light blue background */
+      padding: 5px 8px; /* Add some padding */
+      border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+      line-height: 1.4; /* Improve readability */
+      /* Ensure notes are visible and don't disrupt layout severely */
+      display: block;
+      width: auto; /* Or a specific max-width if needed */
+  }

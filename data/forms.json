@@ -1,0 +1,18 @@
+{
+    "https://www.cityofdublin.org/placeholder-building-permit-form": [
+      {"selector": "#applicantName", "prefillKey": "name", "notes": "Enter the full name of the primary applicant."},
+      {"selector": "#propertyAddress", "prefillKey": "address", "notes": "The street address of the property where the work will occur."},
+      {"selector": "[name='city']", "prefillKey": "city", "notes": "Should be Dublin."},
+      {"selector": "[name='state']", "prefillKey": "state", "notes": "Should be CA."},
+      {"selector": "[name='zipCode']", "prefillKey": "zip"},
+      {"selector": "#applicantPhone", "prefillKey": "phone"},
+      {"selector": "#applicantEmail", "prefillKey": "email"},
+      {"selector": "#projectDescription", "notes": "Provide a detailed description of the proposed work (e.g., 'Install new roof', 'Build 10x12 shed', 'Replace existing fence'). This field cannot be pre-filled automatically."}
+    ],
+    "https://www.cityofdublin.org/placeholder-business-license-form": [
+      {"selector": "#businessLegalName", "prefillKey": "name", "notes": "Your registered legal business name."},
+      {"selector": "#businessStreetAddress", "prefillKey": "address", "notes": "The physical address of your business in Dublin."},
+      {"selector": "#contactEmail", "prefillKey": "email"},
+      {"selector": "#contactPhone", "prefillKey": "phone"}
+    ]
+  }

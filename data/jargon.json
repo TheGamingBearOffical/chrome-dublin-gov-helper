@@ -1,0 +1,12 @@
+{
+    "building": {
+      "setback": "The minimum required distance between a building, structure, or portion thereof and a property line.",
+      "impervious surface": "A surface that does not allow water to penetrate, such as concrete, asphalt, rooftops, and compacted gravel.",
+      "easement": "A legal right to use a portion of another person's property for a specific purpose (e.g., utility access)."
+    },
+    "business": {
+      "dba": "Doing Business As; a name used by a business that is different from its legal name.",
+      "business license": "A permit required by a local government to operate a business within its jurisdiction.",
+      "zoning": "Regulations that divide a city into areas or zones for specific types of land use (e.g., residential, commercial, industrial)."
+    }
+  }
